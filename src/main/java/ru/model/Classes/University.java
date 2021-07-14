@@ -1,6 +1,6 @@
 package ru.model.Classes;
 
-import ru.model.Classes.StudyProfile;
+import ru.model.enums.StudyProfile;
 
 public class University {
     private String id;

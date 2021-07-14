@@ -1,6 +1,6 @@
 package ru.model.builder;
 
-import ru.model.Classes.StudyProfile;
+import ru.model.enums.StudyProfile;
 import ru.model.Classes.University;
 
 public class UniversityBuilder {

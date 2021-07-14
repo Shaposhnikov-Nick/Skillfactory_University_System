@@ -1,34 +1,36 @@
 package ru.model;
 
 import ru.model.Classes.Student;
-import ru.model.Classes.StudyProfile;
 import ru.model.Classes.University;
+import ru.model.enums.StudyProfile;
 import ru.model.builder.StudentBuilder;
 import ru.model.builder.UniversityBuilder;
+import ru.model.io.XlsxReader;
+
+import java.io.IOException;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // создаем объект student
-        StudentBuilder studentBuilder = new StudentBuilder();
-        studentBuilder.setFullName("Nick");
-        studentBuilder.setCurrentCourseNumber(3);
-        studentBuilder.setUniversityId("1");
-        studentBuilder.setAvgExamScore(52556);
+        //считываем данные о студентах и выводим в консоль
+        try {
+            List<Student> students = XlsxReader.readXlsStudents();
+            for (Student student : students) {
+                System.out.println(student);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        Student student = studentBuilder.createStudent();
-        System.out.println(student);
-
-        // создаем объект university
-        UniversityBuilder universityBuilder = new UniversityBuilder();
-        universityBuilder.setId("1");
-        universityBuilder.setFullName("Moscow State University");
-        universityBuilder.setMainProfile(StudyProfile.COMPUTER_SCIENCE);
-        universityBuilder.setShortName("MSU");
-        universityBuilder.setYearOfFoundation(1755);
-
-        University university = universityBuilder.createUniversity();
-        System.out.println(university);
-
+        //считываем данные об университетах и выводим в консоль
+        try {
+            List<University> universities = XlsxReader.readXlsUniversities();
+            for(University university : universities){
+                System.out.println(university);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }

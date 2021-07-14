@@ -1,4 +1,4 @@
-package ru.model.Classes;
+package ru.model.enums;
 
 public enum StudyProfile {
     MEDICINE("Медицина"),
@@ -6,7 +6,10 @@ public enum StudyProfile {
     ENERGETICS("Энергетика"),
     JURISPRUDENCE("Юриспруденция"),
     COMPUTER_SCIENCE("Компьютерные науки"),
-    ECONOMY("Экономика");
+    ECONOMY("Экономика"),
+    PHYSICS("Физика"),
+    LINGUISTICS("Лингвистика"),
+    MATHEMATICS("Математика");
 
     private String profileName;
 
