@@ -1,4 +1,4 @@
-package ru.model.Classes;
+package ru.model.classes;
 
 import ru.model.enums.StudyProfile;
 

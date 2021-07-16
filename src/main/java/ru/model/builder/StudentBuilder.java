@@ -1,6 +1,6 @@
 package ru.model.builder;
 
-import ru.model.Classes.Student;
+import ru.model.classes.Student;
 
 public class StudentBuilder {
     private String fullName;

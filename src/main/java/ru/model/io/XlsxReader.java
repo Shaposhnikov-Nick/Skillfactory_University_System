@@ -1,11 +1,10 @@
 package ru.model.io;
 
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import ru.model.Classes.Student;
-import ru.model.Classes.University;
+import ru.model.classes.Student;
+import ru.model.classes.University;
 import ru.model.builder.StudentBuilder;
 import ru.model.builder.UniversityBuilder;
 import ru.model.enums.StudyProfile;
@@ -19,7 +18,7 @@ public class XlsxReader {
     static StudentBuilder studentBuilder;
     static UniversityBuilder universityBuilder;
 
-    // путь к EXCEL - файлу с данными
+    // путь к EXCEL-файлу с данными
     private static final File file = new File("D:\\Java\\IdeaProjects\\UniversitySystem\\src\\main" +
             "\\resources\\universityinfo.xlsx");
 

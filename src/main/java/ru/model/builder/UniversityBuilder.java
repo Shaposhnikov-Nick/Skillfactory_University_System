@@ -1,7 +1,7 @@
 package ru.model.builder;
 
 import ru.model.enums.StudyProfile;
-import ru.model.Classes.University;
+import ru.model.classes.University;
 
 public class UniversityBuilder {
     private String id;

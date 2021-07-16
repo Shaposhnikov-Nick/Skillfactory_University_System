@@ -1,13 +1,14 @@
 package ru.model;
 
-import ru.model.Classes.Student;
-import ru.model.Classes.University;
-import ru.model.enums.StudyProfile;
-import ru.model.builder.StudentBuilder;
-import ru.model.builder.UniversityBuilder;
+import ru.model.classes.Student;
+import ru.model.classes.University;
+import ru.model.comparators.student_comparator.StudentAvgExamScoreComparator;
+import ru.model.comparators.university_comparator.UniversityMainProfileComparator;
+import ru.model.comparators.university_comparator.UniversityYearOfFoundationComparator;
 import ru.model.io.XlsxReader;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -15,6 +16,8 @@ public class Main {
         //считываем данные о студентах и выводим в консоль
         try {
             List<Student> students = XlsxReader.readXlsStudents();
+
+            Collections.sort(students, new StudentAvgExamScoreComparator().reversed());
             for (Student student : students) {
                 System.out.println(student);
             }
@@ -25,6 +28,7 @@ public class Main {
         //считываем данные об университетах и выводим в консоль
         try {
             List<University> universities = XlsxReader.readXlsUniversities();
+            Collections.sort(universities, new UniversityMainProfileComparator());
             for(University university : universities){
                 System.out.println(university);
             }
