@@ -15,11 +15,9 @@ import java.util.Iterator;
 import java.util.List;
 
 public class XlsxReader {
-    static StudentBuilder studentBuilder;
-    static UniversityBuilder universityBuilder;
 
     // путь к EXCEL-файлу с данными
-    private static final File file = new File("D:\\Java\\IdeaProjects\\UniversitySystem\\src\\main" +
+    private static final File dataFile = new File("D:\\Java\\IdeaProjects\\UniversitySystem\\src\\main" +
             "\\resources\\universityinfo.xlsx");
 
     // приватный конструктор
@@ -32,7 +30,7 @@ public class XlsxReader {
         List<Student> students = new ArrayList<>();
 
         // Получаем содержимое файла как FileInputStream.
-        FileInputStream reader = new FileInputStream(file);
+        FileInputStream reader = new FileInputStream(dataFile);
 
         //Создаём экземпляр класса XSSFWorkbook, передав его конструктору на вход стрим файла
         XSSFWorkbook workbook = new XSSFWorkbook(reader);
@@ -76,7 +74,7 @@ public class XlsxReader {
         List<University> universities = new ArrayList<>();
 
         // Получаем содержимое файла как FileInputStream.
-        FileInputStream reader = new FileInputStream(file);
+        FileInputStream reader = new FileInputStream(dataFile);
 
         //Создаём экземпляр класса XSSFWorkbook, передав его конструктору на вход стрим файла
         XSSFWorkbook workbook = new XSSFWorkbook(reader);
