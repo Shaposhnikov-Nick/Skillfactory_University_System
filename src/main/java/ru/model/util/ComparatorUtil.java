@@ -1,4 +1,4 @@
-package ru.model.comparators;
+package ru.model.util;
 
 import ru.model.comparators.student_comparator.*;
 import ru.model.comparators.university_comparator.*;
@@ -9,7 +9,7 @@ import ru.model.interfaces.UniversityComparator;
 
 public class ComparatorUtil {
 
-    public ComparatorUtil() {
+    private ComparatorUtil() {
     }
 
     public static UniversityComparator getUniversityComparator(UniversityComparatorType universityComparatorType) {
