@@ -1,11 +1,20 @@
 package ru.model.classes;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Objects;
 
 public class Student {
+    @SerializedName("ФИО")
     private String fullName;
+
+    @SerializedName("Код университета")
     private String universityId;
+
+    @SerializedName("Курс")
     private int currentCourseNumber;
+
+    @SerializedName("Средний балл успеваемости")
     private float avgExamScore;
 
     public Student(String fullName, String universityId, int currentCourseNumber, float avgExamScore) {

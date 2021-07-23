@@ -92,8 +92,8 @@ public class Main {
                 "Stream API");
         universities.stream()
                 // фильтр по специальности
-                .filter(university -> university.getMainProfile().getProfileName() == StudyProfile.MEDICINE
-                        .getProfileName())
+                .filter(university -> university.getMainProfile().getProfileName().equals(StudyProfile.MEDICINE
+                        .getProfileName()))
                 // создаем json из каждого  элемента
                 .forEach(university -> {
                     String universityToJsonString = JsonUtil.SerializeUniversityToJson(university);

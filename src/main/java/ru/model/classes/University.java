@@ -1,12 +1,22 @@
 package ru.model.classes;
 
+import com.google.gson.annotations.SerializedName;
 import ru.model.enums.StudyProfile;
 
 public class University {
+    @SerializedName("Код университета")
     private String id;
+
+    @SerializedName("Полное название университета")
     private String fullName;
+
+    @SerializedName("Краткое название университета")
     private String shortName;
+
+    @SerializedName("Год основания")
     private int yearOfFoundation;
+
+    @SerializedName("Направление подготовки")
     private StudyProfile mainProfile;
 
     public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile) {
