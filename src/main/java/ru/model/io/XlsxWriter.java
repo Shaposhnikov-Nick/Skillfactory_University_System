@@ -108,29 +108,30 @@ public class XlsxWriter {
             XSSFCellStyle cellStyle = createCellStyle(workbook, cellFont);
 
             // создаем и заполняем ячейки данными статистики
+            // профиль обучения
             Cell studyProfile = currentRow.createCell(0);
             studyProfile.setCellValue(statistic.getStudyProfile().getProfileName());
             studyProfile.setCellStyle(cellStyle);
 
+            // количество студентов по профилю
             Cell numStudentsByProfile = currentRow.createCell(1);
             numStudentsByProfile.setCellValue(statistic.getNumStudentsByProfile());
             numStudentsByProfile.setCellStyle(cellStyle);
 
-
+            // количество университетов по профилю
             Cell numUniversitiesByProfile = currentRow.createCell(2);
             numUniversitiesByProfile.setCellValue(statistic.getNumUniversitiesByProfile());
             numUniversitiesByProfile.setCellStyle(cellStyle);
 
-
+            // средний балл за экзамен
             Cell avgExamScore = currentRow.createCell(3);
             avgExamScore.setCellValue(statistic.getAvgExamScore());
             avgExamScore.setCellStyle(cellStyle);
 
-
+            // название университетов
             Cell universityName = currentRow.createCell(4);
             universityName.setCellValue(statistic.getUniversityName());
             universityName.setCellStyle(cellStyle);
-
         }
 
         // выравниваем столбцы по ширине содержимого

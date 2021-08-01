@@ -17,19 +17,20 @@ public class StatisticsUtil {
     private StatisticsUtil() {
     }
 
+    // получение параметров из коллекции университетов
     private static void setParameterToStatisticFromUniversity(Statistics statistics, University university) {
         statistics.setNumUniversitiesByProfile(1);
         statistics.setUniversityName(university.getFullName());
     }
 
+    // получение параметров из коллекции студентов
     private static void setParameterToStatisticFromStudent(Statistics statistics, Student student) {
         statistics.setNumStudentsByProfile(1);
         statistics.setAvgExamScore(
                 BigDecimal.valueOf(student.getAvgExamScore()).setScale(3, RoundingMode.HALF_UP).doubleValue());
-
-
     }
 
+    // создание файла со стратистикой
     public static List<Statistics> createStatics(List<University> universities, List<Student> students) {
         // коллекция статистики
         List<Statistics> statistics = new ArrayList<>();
@@ -40,7 +41,7 @@ public class StatisticsUtil {
         Statistics linguisticsStatistic = new Statistics(StudyProfile.LINGUISTICS);
         Statistics mathematicsStatistic = new Statistics(StudyProfile.MATHEMATICS);
 
-        // записываем данные статистики из университетов
+        // записываем данные статистики университетов
         universities
                 .forEach(university -> {
                     switch (university.getMainProfile()) {
@@ -51,6 +52,7 @@ public class StatisticsUtil {
                     }
                 });
 
+        // записываем данные статистики  студентов
         students.stream()
                 .forEach(student -> {
                     switch (student.getUniversityId()) {

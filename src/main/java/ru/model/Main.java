@@ -2,6 +2,7 @@ package ru.model;
 
 import ru.model.classes.Student;
 import ru.model.classes.University;
+import ru.model.enums.StudyProfile;
 import ru.model.io.XlsxWriter;
 import ru.model.statistics.Statistics;
 import ru.model.util.ComparatorUtil;
@@ -10,8 +11,8 @@ import ru.model.enums.UniversityComparatorType;
 import ru.model.interfaces.StudentComparator;
 import ru.model.interfaces.UniversityComparator;
 import ru.model.io.XlsxReader;
+import ru.model.util.JsonUtil;
 import ru.model.util.StatisticsUtil;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -54,7 +55,6 @@ public class Main {
         }
         System.out.println();
 
-        /*
         // сериализация коллекций
         System.out.println("Сериализация коллекции университетов в Json");
         String universityJson = JsonUtil.SerializedCollectionUniversity(universities);
@@ -104,7 +104,7 @@ public class Main {
                     University universityFromJsonStream = JsonUtil.DeserializeUniversityFromJson(universityToJsonString);
                     System.out.println(universityFromJsonStream);
                 });
-         */
+
 
         // создание статистики
 
