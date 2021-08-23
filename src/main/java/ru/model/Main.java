@@ -1,5 +1,7 @@
 package ru.model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.model.classes.Student;
 import ru.model.classes.University;
 import ru.model.enums.StudyProfile;
@@ -17,6 +19,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class.getName());
     public static void main(String[] args) {
         List<Student> students = null;
         List<University> universities = null;
@@ -34,7 +37,9 @@ public class Main {
 
         } catch (IOException ioException) {
             ioException.printStackTrace();
+            logger.error("Ошибка при чтении файла");
         }
+
         System.out.println();
 
 
@@ -52,6 +57,8 @@ public class Main {
 
         } catch (IOException ioException) {
             ioException.printStackTrace();
+            logger.error("Ошибка при чтении файла");
+
         }
         System.out.println();
 
@@ -107,7 +114,6 @@ public class Main {
 
 
         // создание статистики
-
         List<Statistics> statistics = StatisticsUtil.createStatics(universities,students);
         XlsxWriter.createStatisticSheet(statistics);
     }

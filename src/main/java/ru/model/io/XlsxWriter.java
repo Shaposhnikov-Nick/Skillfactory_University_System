@@ -1,5 +1,7 @@
 package ru.model.io;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.xssf.usermodel.*;
@@ -11,6 +13,8 @@ import java.io.IOException;
 import java.util.List;
 
 public class XlsxWriter {
+    private static final Logger logger = LogManager.getLogger(XlsxWriter.class.getName());
+
     // путь к EXCEL-файлу с данными
     private static final File dataFile = new File("D:\\Java\\IdeaProjects\\UniversitySystem\\src\\main" +
             "\\resources\\statistics.xlsx");
@@ -144,8 +148,10 @@ public class XlsxWriter {
         // запись в файл
         try (FileOutputStream fos = new FileOutputStream(dataFile)) {
             workbook.write(fos);
+            logger.info("Запись статистики в файл");
         } catch (IOException e) {
             e.printStackTrace();
+            logger.error("Ошибка при записи статистики в файл");
         }
     }
 }

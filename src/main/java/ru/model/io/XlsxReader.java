@@ -1,5 +1,7 @@
 package ru.model.io;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -16,6 +18,8 @@ import java.util.List;
 
 public class XlsxReader {
 
+    private static final Logger logger = LogManager.getLogger(XlsxReader.class.getName());
+
     // путь к EXCEL-файлу с данными
     private static final File dataFile = new File("D:\\Java\\IdeaProjects\\UniversitySystem\\src\\main" +
             "\\resources\\universityinfo.xlsx");
@@ -26,6 +30,8 @@ public class XlsxReader {
 
     // метод для чтения студентов
     public static List<Student> readXlsStudents() throws IOException {
+        logger.info("Данные о студентах прочитаны из файла");
+
         // создаем лист для хранения студентов
         List<Student> students = new ArrayList<>();
 
@@ -70,6 +76,8 @@ public class XlsxReader {
 
     // метод для чтения университетов
     public static List<University> readXlsUniversities() throws IOException {
+        logger.info("Данные об университетах прочитаны из файла");
+
         // создаем лист для хранения университетов
         List<University> universities = new ArrayList<>();
 

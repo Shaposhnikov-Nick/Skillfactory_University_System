@@ -2,8 +2,6 @@ package ru.model.statistics;
 
 import ru.model.enums.StudyProfile;
 
-import java.math.BigDecimal;
-
 public class Statistics {
     private StudyProfile studyProfile; // профиль  образования
     private int numStudentsByProfile = 0; // количество студентов, обучающихся по профилю

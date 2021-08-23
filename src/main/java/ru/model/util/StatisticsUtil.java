@@ -1,5 +1,7 @@
 package ru.model.util;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.model.classes.Student;
 import ru.model.classes.University;
 import ru.model.enums.StudyProfile;
@@ -13,6 +15,7 @@ import java.util.List;
 
 
 public class StatisticsUtil {
+    private static final Logger logger = LogManager.getLogger(StatisticsUtil.class.getName());
 
     private StatisticsUtil() {
     }
@@ -32,6 +35,8 @@ public class StatisticsUtil {
 
     // создание файла со стратистикой
     public static List<Statistics> createStatics(List<University> universities, List<Student> students) {
+        logger.info("Создание файла статистики");
+
         // коллекция статистики
         List<Statistics> statistics = new ArrayList<>();
 

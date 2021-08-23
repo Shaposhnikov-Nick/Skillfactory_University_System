@@ -21,7 +21,6 @@ public class JsonUtil {
     public static String SerializeStudentToJson(Student student) {
         //создаем объект Json в форматированном виде (PrettyPrinting)
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
         // возвращаем сериализованный в строку объект класса Student
         return gson.toJson(student);
     }
