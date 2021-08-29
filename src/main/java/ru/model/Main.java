@@ -2,10 +2,12 @@ package ru.model;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.model.classes.FullInfo;
 import ru.model.classes.Student;
 import ru.model.classes.University;
 import ru.model.enums.StudyProfile;
 import ru.model.io.XlsxWriter;
+import ru.model.io.XmlWriter;
 import ru.model.statistics.Statistics;
 import ru.model.util.ComparatorUtil;
 import ru.model.enums.StudentComparatorType;
@@ -16,11 +18,16 @@ import ru.model.io.XlsxReader;
 import ru.model.util.JsonUtil;
 import ru.model.util.StatisticsUtil;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class.getName());
+
     public static void main(String[] args) {
+
+        logger.info("Program started");
+
         List<Student> students = null;
         List<University> universities = null;
 
@@ -116,5 +123,17 @@ public class Main {
         // создание статистики
         List<Statistics> statistics = StatisticsUtil.createStatics(universities,students);
         XlsxWriter.createStatisticSheet(statistics);
+
+        // маршаллинг в xml
+        FullInfo fullInfo = new FullInfo()
+                .setStudentList(students)
+                .setUniversityList(universities)
+                .setStatisticsList(statistics)
+                .setProcessDate(new Date());
+
+        XmlWriter.generateXmlReq(fullInfo);
+
+        logger.info("Program finished\n");
+
     }
 }

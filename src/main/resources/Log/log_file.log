@@ -14,3 +14,110 @@
 [INFO ] 2021-08-23 22:36:10.961 [main] XlsxReader - Данные об университетах прочитаны из файла
 [INFO ] 2021-08-23 22:36:11.128 [main] StatisticsUtil - Создание файла статистики
 [INFO ] 2021-08-23 22:36:11.717 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:06:32.792 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:06:33.967 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:06:34.139 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:06:34.974 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:06:34.974 [main] XmlWriter - Marshalling started
+[ERROR] 2021-08-29 22:06:34.990 [main] XmlWriter - Marshalling xml failed
+[INFO ] 2021-08-29 22:06:34.990 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 22:21:29.587 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:21:30.793 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:21:31.043 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:21:31.667 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:21:31.667 [main] XmlWriter - Marshalling started
+[ERROR] 2021-08-29 22:21:31.683 [main] XmlWriter - Marshalling xml failed
+[INFO ] 2021-08-29 22:21:31.683 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 22:25:51.807 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:25:52.989 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:25:53.235 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:25:53.763 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:25:53.766 [main] XmlWriter - Marshalling started
+[ERROR] 2021-08-29 22:25:53.778 [main] XmlWriter - Marshalling xml failed
+[INFO ] 2021-08-29 22:25:53.778 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 22:33:18.140 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:33:19.239 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:33:19.520 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:33:20.114 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:33:20.114 [main] XmlWriter - Marshalling started
+[ERROR] 2021-08-29 22:33:20.161 [main] XmlWriter - Marshalling xml failed
+[INFO ] 2021-08-29 22:33:20.161 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 22:36:17.294 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:36:18.388 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:36:18.653 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:36:19.200 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:36:19.216 [main] XmlWriter - Marshalling started
+[ERROR] 2021-08-29 22:36:19.231 [main] XmlWriter - Marshalling xml failed
+[INFO ] 2021-08-29 22:36:19.231 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 22:42:18.584 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:42:19.753 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:42:19.924 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:42:20.708 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:42:20.723 [main] XmlWriter - Marshalling started
+[ERROR] 2021-08-29 22:42:20.723 [main] XmlWriter - Marshalling xml failed
+[INFO ] 2021-08-29 22:42:20.723 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 22:45:29.557 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:45:30.649 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:45:30.961 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:45:31.633 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:45:31.649 [main] XmlWriter - Marshalling started
+[ERROR] 2021-08-29 22:45:31.664 [main] XmlWriter - Marshalling xml failed
+[INFO ] 2021-08-29 22:45:31.664 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 22:58:59.705 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 22:59:00.868 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 22:59:01.039 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 22:59:01.671 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 22:59:01.671 [main] XmlWriter - Marshalling started
+[INFO ] 2021-08-29 22:59:01.874 [main] XmlWriter - Directory was created
+[INFO ] 2021-08-29 22:59:01.889 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 23:06:33.474 [main] Main - 
+Program started
+[INFO ] 2021-08-29 23:06:33.490 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 23:06:34.575 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 23:06:34.747 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 23:06:35.325 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 23:06:35.341 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-29 23:06:35.653 [main] XmlWriter - Directory already created
+[INFO ] 2021-08-29 23:06:35.684 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 23:06:35.684 [main] Main - Program finished
+
+[INFO ] 2021-08-29 23:08:11.909 [main] Main - Program started
+[INFO ] 2021-08-29 23:08:11.909 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 23:08:12.904 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 23:08:13.139 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 23:08:14.104 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 23:08:14.119 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-29 23:08:14.401 [main] XmlWriter - Directory already created
+[INFO ] 2021-08-29 23:08:14.401 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 23:08:14.401 [main] Main - Program finished
+
+[INFO ] 2021-08-29 23:09:51.088 [main] Main - Program started
+[INFO ] 2021-08-29 23:09:51.088 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 23:09:52.352 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 23:09:52.524 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 23:09:53.272 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 23:09:53.276 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-29 23:09:53.464 [main] XmlWriter - Directory already created
+[INFO ] 2021-08-29 23:09:53.480 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 23:09:53.480 [main] Main - Program finished
+
+[INFO ] 2021-08-29 23:13:11.796 [main] Main - Program started
+[INFO ] 2021-08-29 23:13:11.811 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 23:13:13.452 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 23:13:13.779 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 23:13:14.447 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 23:13:14.447 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-29 23:13:14.619 [main] XmlWriter - Directory already created
+[INFO ] 2021-08-29 23:13:14.635 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 23:13:14.635 [main] Main - Program finished
+
+[INFO ] 2021-08-29 23:13:56.764 [main] Main - Program started
+[INFO ] 2021-08-29 23:13:56.771 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 23:13:57.944 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 23:13:58.116 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 23:13:58.727 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 23:13:58.731 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-29 23:13:58.917 [main] XmlWriter - Directory already created
+[INFO ] 2021-08-29 23:13:58.936 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 23:13:58.937 [main] Main - Program finished
+

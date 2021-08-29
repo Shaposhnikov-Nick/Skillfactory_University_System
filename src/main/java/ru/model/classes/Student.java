@@ -2,19 +2,28 @@ package ru.model.classes;
 
 import com.google.gson.annotations.SerializedName;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.Objects;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Student {
-    @SerializedName("ФИО")
+
+    @SerializedName("StudentName")
+    @XmlElement(name = "StudentName")
     private String fullName;
 
-    @SerializedName("Код университета")
+    @SerializedName("UniversityId")
+    @XmlElement(name = "UniversityId")
     private String universityId;
 
-    @SerializedName("Курс")
+    @SerializedName("CourseNumber")
+    @XmlElement(name = "CourseNumber")
     private int currentCourseNumber;
 
-    @SerializedName("Средний балл успеваемости")
+    @SerializedName("AvgExamScore")
+    @XmlElement(name = "AvgExamScore")
     private float avgExamScore;
 
     public Student(String fullName, String universityId, int currentCourseNumber, float avgExamScore) {
