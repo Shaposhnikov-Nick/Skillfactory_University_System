@@ -18,53 +18,48 @@ public class JsonUtil {
      методы сериализации
      */
 
-    public static String SerializeStudentToJson(Student student) {
+    public static String serializeStudentToJson(Student student) {
         //создаем объект Json в форматированном виде (PrettyPrinting)
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         // возвращаем сериализованный в строку объект класса Student
         return gson.toJson(student);
     }
 
-    public static String SerializeUniversityToJson(University university) {
+    public static String serializeUniversityToJson(University university) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         return gson.toJson(university);
     }
 
-    public static String SerializedCollectionStudents(List<Student> students) {
+    public static String serializeListToJson(List<?> list) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        // возвращаем сериализованную в строки коллекцию объектов класса Student
-        return gson.toJson(students);
+        return gson.toJson(list);
     }
 
-    public static String SerializedCollectionUniversity(List<University> university) {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        return gson.toJson(university);
 
-    }
 
    /*
      методы десериализации
      */
 
-    public static Student DeserializeStudentFromJson(String json) {
+    public static Student deserializeStudentFromJson(String json) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         // возвращаем десериализованную строку в формате Json в объект класса Student
         return gson.fromJson(json, Student.class);
     }
 
-    public static University DeserializeUniversityFromJson(String json) {
+    public static University deserializeUniversityFromJson(String json) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         // возвращаем десериализованную строку в формате Json в объект класса University
         return gson.fromJson(json,University.class);
     }
 
-    public static List DeserializeCollectionStudents(String json) {
+    public static List deserializeCollectionStudents(String json) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         // возвращаем сериализованную в строки коллекцию объектов класса Student
         return gson.fromJson(json, new TypeToken<List<Student>>() {}.getType());
     }
 
-    public static List<University> DeserializeCollectionUniversity(String json) {
+    public static List<University> deserializeCollectionUniversity(String json) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         return gson.fromJson(json, new TypeToken<List<University>>() {}.getType());
 

@@ -111,3 +111,73 @@ Program started
 [INFO ] 2021-08-29 23:13:14.635 [main] XmlWriter - Marshalling finished
 [INFO ] 2021-08-29 23:13:14.635 [main] Main - Program finished
 
+[INFO ] 2021-08-29 23:13:56.764 [main] Main - Program started
+[INFO ] 2021-08-29 23:13:56.771 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-29 23:13:57.944 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-29 23:13:58.116 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-29 23:13:58.727 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-29 23:13:58.731 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-29 23:13:58.917 [main] XmlWriter - Directory already created
+[INFO ] 2021-08-29 23:13:58.936 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-29 23:13:58.937 [main] Main - Program finished
+
+[INFO ] 2021-08-30 21:43:08.563 [main] Main - Program started
+[INFO ] 2021-08-30 21:43:08.578 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-30 21:43:10.265 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-30 21:43:10.609 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-30 21:43:11.562 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-30 21:43:11.562 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-30 21:43:11.873 [main] XmlWriter - Directory already created
+java.nio.file.FileAlreadyExistsException: xmlReqs
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:506) ~[?:?]
+	at java.nio.file.Files.createDirectory(Files.java:694) ~[?:?]
+	at ru.model.io.XmlWriter.generateXmlReq(XmlWriter.java:35) [classes/:?]
+	at ru.model.Main.main(Main.java:136) [classes/:?]
+[INFO ] 2021-08-30 21:43:11.904 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-30 21:43:11.904 [main] JsonWriter - Json writing started
+[INFO ] 2021-08-30 21:43:11.904 [main] JsonWriter - Directory was created
+[ERROR] 2021-08-30 21:43:11.935 [main] JsonWriter - Statistic Json writing failed
+[INFO ] 2021-08-30 21:43:11.935 [main] JsonWriter - Json writing finished
+[INFO ] 2021-08-30 21:43:11.935 [main] Main - Program finished
+
+[INFO ] 2021-08-30 21:50:31.003 [main] Main - Program started
+[INFO ] 2021-08-30 21:50:31.003 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-30 21:50:32.159 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-30 21:50:32.431 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-30 21:50:33.166 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-30 21:50:33.166 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-30 21:50:33.337 [main] XmlWriter - Directory already created
+java.nio.file.FileAlreadyExistsException: xmlReqs
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:506) ~[?:?]
+	at java.nio.file.Files.createDirectory(Files.java:694) ~[?:?]
+	at ru.model.io.XmlWriter.generateXmlReq(XmlWriter.java:35) [classes/:?]
+	at ru.model.Main.main(Main.java:136) [classes/:?]
+[INFO ] 2021-08-30 21:50:33.353 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-30 21:50:33.353 [main] JsonWriter - Json writing started
+[WARN ] 2021-08-30 21:50:33.353 [main] JsonWriter - Directory already created 
+java.nio.file.FileAlreadyExistsException: jsonReqs
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:506) ~[?:?]
+	at java.nio.file.Files.createDirectory(Files.java:694) ~[?:?]
+	at ru.model.io.JsonWriter.writeJsonReq(JsonWriter.java:25) [classes/:?]
+	at ru.model.Main.main(Main.java:139) [classes/:?]
+[ERROR] 2021-08-30 21:50:33.369 [main] JsonWriter - Statistic Json writing failed
+java.io.FileNotFoundException: jsonReqs\statistics" + fullInfo.getProcessDate().getTime() + ".json (Синтаксическая ошибка в имени файла, имени папки или метке тома)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:291) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:234) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:123) ~[?:?]
+	at ru.model.io.JsonWriter.writeStatistic(JsonWriter.java:42) [classes/:?]
+	at ru.model.io.JsonWriter.writeJsonReq(JsonWriter.java:33) [classes/:?]
+	at ru.model.Main.main(Main.java:139) [classes/:?]
+[INFO ] 2021-08-30 21:50:33.369 [main] JsonWriter - Json writing finished
+[INFO ] 2021-08-30 21:50:33.369 [main] Main - Program finished
+

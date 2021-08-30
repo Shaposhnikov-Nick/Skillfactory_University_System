@@ -6,6 +6,7 @@ import ru.model.classes.FullInfo;
 import ru.model.classes.Student;
 import ru.model.classes.University;
 import ru.model.enums.StudyProfile;
+import ru.model.io.JsonWriter;
 import ru.model.io.XlsxWriter;
 import ru.model.io.XmlWriter;
 import ru.model.statistics.Statistics;
@@ -71,17 +72,17 @@ public class Main {
 
         // сериализация коллекций
         System.out.println("Сериализация коллекции университетов в Json");
-        String universityJson = JsonUtil.SerializedCollectionUniversity(universities);
+        String universityJson = JsonUtil.serializeListToJson(universities);
         System.out.println(universityJson + "\n");
 
         System.out.println("Сериализация коллекции студентов в Json");
-        String studentJson = JsonUtil.SerializedCollectionStudents(students);
+        String studentJson = JsonUtil.serializeListToJson(students);
         System.out.println(studentJson);
 
         // десериализация строк
 
-        List<University> universityFromJson = JsonUtil.DeserializeCollectionUniversity(universityJson);
-        List<Student> studentFromJson = JsonUtil.DeserializeCollectionStudents(studentJson);
+        List<University> universityFromJson = JsonUtil.deserializeCollectionUniversity(universityJson);
+        List<Student> studentFromJson = JsonUtil.deserializeCollectionStudents(studentJson);
         System.out.println();
 
         // сравнение элементов в исходной и десериализованной колекциях
@@ -97,10 +98,10 @@ public class Main {
                 .filter(student -> (student.getCurrentCourseNumber() == 3))
                 .forEach(student -> {
                     // создаем json из каждого  элемента
-                    String studentToJsonStream = JsonUtil.SerializeStudentToJson(student);
+                    String studentToJsonStream = JsonUtil.serializeStudentToJson(student);
                     System.out.println(studentToJsonStream + "\n");
                     // десериализация
-                    Student studentFromJsonStream = JsonUtil.DeserializeStudentFromJson(studentToJsonStream);
+                    Student studentFromJsonStream = JsonUtil.deserializeStudentFromJson(studentToJsonStream);
                     System.out.println(studentFromJsonStream + "\n");
                 });
 
@@ -112,10 +113,10 @@ public class Main {
                         .getProfileName()))
                 // создаем json из каждого  элемента
                 .forEach(university -> {
-                    String universityToJsonString = JsonUtil.SerializeUniversityToJson(university);
+                    String universityToJsonString = JsonUtil.serializeUniversityToJson(university);
                     System.out.println(universityToJsonString);
                     // десериализация
-                    University universityFromJsonStream = JsonUtil.DeserializeUniversityFromJson(universityToJsonString);
+                    University universityFromJsonStream = JsonUtil.deserializeUniversityFromJson(universityToJsonString);
                     System.out.println(universityFromJsonStream);
                 });
 
@@ -124,14 +125,19 @@ public class Main {
         List<Statistics> statistics = StatisticsUtil.createStatics(universities,students);
         XlsxWriter.createStatisticSheet(statistics);
 
-        // маршаллинг в xml
+        // создание объекта с информацией для последующей обработки в xml и json
         FullInfo fullInfo = new FullInfo()
                 .setStudentList(students)
                 .setUniversityList(universities)
                 .setStatisticsList(statistics)
                 .setProcessDate(new Date());
 
+        // маршаллинг в xml
         XmlWriter.generateXmlReq(fullInfo);
+
+        // сериализация в Json
+        JsonWriter.writeJsonReq(fullInfo);
+
 
         logger.info("Program finished\n");
 

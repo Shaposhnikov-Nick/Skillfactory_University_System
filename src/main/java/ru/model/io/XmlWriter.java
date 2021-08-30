@@ -35,7 +35,7 @@ public class XmlWriter {
                 Files.createDirectory(Paths.get("xmlReqs"));
                 logger.info("Directory was created");
             } catch (IOException e) {
-                logger.warn("Directory already created");
+                logger.warn("Directory already created", e);
             }
 
             File requestFile = new File("xmlReqs/infoReq" + new Date().getTime() + ".xml");
