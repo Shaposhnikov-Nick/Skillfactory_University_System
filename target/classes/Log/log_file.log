@@ -181,3 +181,32 @@ java.io.FileNotFoundException: jsonReqs\statistics" + fullInfo.getProcessDate().
 [INFO ] 2021-08-30 21:50:33.369 [main] JsonWriter - Json writing finished
 [INFO ] 2021-08-30 21:50:33.369 [main] Main - Program finished
 
+[INFO ] 2021-08-30 21:56:43.044 [main] Main - Program started
+[INFO ] 2021-08-30 21:56:43.059 [main] XlsxReader - Данные о студентах прочитаны из файла
+[INFO ] 2021-08-30 21:56:44.222 [main] XlsxReader - Данные об университетах прочитаны из файла
+[INFO ] 2021-08-30 21:56:44.379 [main] StatisticsUtil - Создание файла статистики
+[INFO ] 2021-08-30 21:56:44.957 [main] XlsxWriter - Запись статистики в файл
+[INFO ] 2021-08-30 21:56:44.957 [main] XmlWriter - Marshalling started
+[WARN ] 2021-08-30 21:56:45.253 [main] XmlWriter - Directory already created
+java.nio.file.FileAlreadyExistsException: xmlReqs
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:506) ~[?:?]
+	at java.nio.file.Files.createDirectory(Files.java:694) ~[?:?]
+	at ru.model.io.XmlWriter.generateXmlReq(XmlWriter.java:35) [classes/:?]
+	at ru.model.Main.main(Main.java:136) [classes/:?]
+[INFO ] 2021-08-30 21:56:45.285 [main] XmlWriter - Marshalling finished
+[INFO ] 2021-08-30 21:56:45.285 [main] JsonWriter - Json writing started
+[WARN ] 2021-08-30 21:56:45.285 [main] JsonWriter - Directory already created 
+java.nio.file.FileAlreadyExistsException: jsonReqs
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.createDirectory(WindowsFileSystemProvider.java:506) ~[?:?]
+	at java.nio.file.Files.createDirectory(Files.java:694) ~[?:?]
+	at ru.model.io.JsonWriter.writeJsonReq(JsonWriter.java:25) [classes/:?]
+	at ru.model.Main.main(Main.java:139) [classes/:?]
+[INFO ] 2021-08-30 21:56:45.300 [main] JsonWriter - Json writing finished
+[INFO ] 2021-08-30 21:56:45.300 [main] Main - Program finished
+

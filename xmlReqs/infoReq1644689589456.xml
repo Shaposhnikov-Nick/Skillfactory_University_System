@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    <studentsInfo>
+        <studentEntry>
+            <StudentName>Иванов И. А.</StudentName>
+            <UniversityId>0002-high</UniversityId>
+            <CourseNumber>2</CourseNumber>
+            <AvgExamScore>4.0</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Козлов М. В.</StudentName>
+            <UniversityId>0002-high</UniversityId>
+            <CourseNumber>2</CourseNumber>
+            <AvgExamScore>4.6</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Фёдоров А. И.</StudentName>
+            <UniversityId>0002-high</UniversityId>
+            <CourseNumber>3</CourseNumber>
+            <AvgExamScore>4.2</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Игнатьев М. М.</StudentName>
+            <UniversityId>0003-high</UniversityId>
+            <CourseNumber>4</CourseNumber>
+            <AvgExamScore>4.3</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Соколов В. В.</StudentName>
+            <UniversityId>0004-high</UniversityId>
+            <CourseNumber>1</CourseNumber>
+            <AvgExamScore>4.8</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Сидоров Е. Г.</StudentName>
+            <UniversityId>0004-high</UniversityId>
+            <CourseNumber>2</CourseNumber>
+            <AvgExamScore>3.9</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Витальев В. А.</StudentName>
+            <UniversityId>0001-high</UniversityId>
+            <CourseNumber>2</CourseNumber>
+            <AvgExamScore>4.0</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Петров П. А.</StudentName>
+            <UniversityId>0001-high</UniversityId>
+            <CourseNumber>1</CourseNumber>
+            <AvgExamScore>5.0</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Алексеев С. В.</StudentName>
+            <UniversityId>0001-high</UniversityId>
+            <CourseNumber>1</CourseNumber>
+            <AvgExamScore>5.0</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Иванов А. Г.</StudentName>
+            <UniversityId>0001-high</UniversityId>
+            <CourseNumber>3</CourseNumber>
+            <AvgExamScore>4.8</AvgExamScore>
+        </studentEntry>
+        <studentEntry>
+            <StudentName>Васильев В. П.</StudentName>
+            <UniversityId>0001-high</UniversityId>
+            <CourseNumber>4</CourseNumber>
+            <AvgExamScore>4.7</AvgExamScore>
+        </studentEntry>
+    </studentsInfo>
+    <universitiesInfo>
+        <universityEntry>
+            <UniversityID>0001-high</UniversityID>
+            <UniversityFullName>Московский Выдуманный Университет</UniversityFullName>
+            <UniversityShortName>МВУ</UniversityShortName>
+            <YearOfFoundation>1990</YearOfFoundation>
+            <StudyProfile>PHYSICS</StudyProfile>
+        </universityEntry>
+        <universityEntry>
+            <UniversityID>0002-high</UniversityID>
+            <UniversityFullName>Московский Придуманный Институт</UniversityFullName>
+            <UniversityShortName>МПИ</UniversityShortName>
+            <YearOfFoundation>1987</YearOfFoundation>
+            <StudyProfile>PHYSICS</StudyProfile>
+        </universityEntry>
+        <universityEntry>
+            <UniversityID>0003-high</UniversityID>
+            <UniversityFullName>Московский Государственный Медицинский Университет</UniversityFullName>
+            <UniversityShortName>МГМУ</UniversityShortName>
+            <YearOfFoundation>1960</YearOfFoundation>
+            <StudyProfile>MEDICINE</StudyProfile>
+        </universityEntry>
+        <universityEntry>
+            <UniversityID>0004-high</UniversityID>
+            <UniversityFullName>Тамбовский Университет Медицины</UniversityFullName>
+            <UniversityShortName>ТУМ</UniversityShortName>
+            <YearOfFoundation>1995</YearOfFoundation>
+            <StudyProfile>MEDICINE</StudyProfile>
+        </universityEntry>
+        <universityEntry>
+            <UniversityID>0005-high</UniversityID>
+            <UniversityFullName>Самарский Медицинский Институт</UniversityFullName>
+            <UniversityShortName>СМИ</UniversityShortName>
+            <YearOfFoundation>1936</YearOfFoundation>
+            <StudyProfile>MEDICINE</StudyProfile>
+        </universityEntry>
+        <universityEntry>
+            <UniversityID>0006-high</UniversityID>
+            <UniversityFullName>Воронежский Литературно-Переводческий Университет</UniversityFullName>
+            <UniversityShortName>ВЛПУ</UniversityShortName>
+            <YearOfFoundation>2003</YearOfFoundation>
+            <StudyProfile>LINGUISTICS</StudyProfile>
+        </universityEntry>
+        <universityEntry>
+            <UniversityID>0007-high</UniversityID>
+            <UniversityFullName>Казанский Университет Вычислений</UniversityFullName>
+            <UniversityShortName>КУВ</UniversityShortName>
+            <YearOfFoundation>1989</YearOfFoundation>
+            <StudyProfile>MATHEMATICS</StudyProfile>
+        </universityEntry>
+    </universitiesInfo>
+    <statisticalInfo>
+        <statisticsEntry>
+            <StudyProfile>MEDICINE</StudyProfile>
+            <AvgExamScore>3.9</AvgExamScore>
+        </statisticsEntry>
+        <statisticsEntry>
+            <StudyProfile>PHYSICS</StudyProfile>
+            <AvgExamScore>4.7</AvgExamScore>
+        </statisticsEntry>
+        <statisticsEntry>
+            <StudyProfile>LINGUISTICS</StudyProfile>
+            <AvgExamScore>0.0</AvgExamScore>
+        </statisticsEntry>
+        <statisticsEntry>
+            <StudyProfile>MATHEMATICS</StudyProfile>
+            <AvgExamScore>0.0</AvgExamScore>
+        </statisticsEntry>
+    </statisticalInfo>
+    <processedAt>2022-02-12T21:13:09.015+03:00</processedAt>
+</root>
